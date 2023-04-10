@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  </head>
+
+  <body id="home">
+    <!-------------------------------------------Accueil---------------------------------------------------------->
+
+    <section>
+      <div class="headcontainer">
+        <video autoplay muted loop class="video-back">
+          <source
+            src="vidéo/video (online-video-cutter.com).mp4"
+            type="video/mp4" />
+        </video>
+
+        <!-- ----------------------------------------NavBar------------------------------------------------------------>
+
+        <nav role="navigation">
+          <ul class="menu">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">A propos de moi</a></li>
+            <li><a href="#project">Projets</a></li>
+            <li><a href="#contact">Contacts</a></li>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          aria-label="toggle curtain navigation"
+          class="nav-toggler">
+          <span class="line l1"></span>
+          <span class="line l2"></span>
+          <span class="line l3"></span>
+        </button>
+        <div
+          class="container"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="600"
+          data-aos-offset="0">
+          <h1>Christopher JEAN-PIERRE</h1>
+          <h2 id="webD1">Web developpeur</h2>
+          <h2 id="webD2"></h2>
+        </div>
+        <a href="#about" class="btn-link"
+          ><img src="image/blue-chevron-down.svg" alt="chevron"
+        /></a>
+      </div>
+    </section>
+
+    <!-------------------------------------------A propos---------------------------------------------------------->
+
+    <section>
+      <div class="container2" id="about">
+        <h2
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine">
+          A propos de moi
+        </h2>
+        <p
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine">
+          Je m’appelle JEAN-PIERRE Christopher, actuellement en formation de Web
+          développeur front-end et back-end avec le centre de formation AFPA
+          territoire digitale. Passionné d’informatique depuis des dizaines
+          d’années, je me suis lancé dans le code courant 2022 et voyant que ça
+          me plaisait, j’ai décidé de chercher une formation qui pourrait
+          m’aider à développer et à acquérir de nouvelle compétence dans le
+          domaine du développement web. Ce portfolio présente une partie des
+          projets effectué en formation et les technologies que je connais
+          jusqu’à présent.
+        </p>
+        <a href="#" class="cv">CV</a>
+      </div>
+    </section>
+
+    <!-------------------------------------------Projet---------------------------------------------------------->
+
+    <section>
+      <div class="container3" id="project">
+        <h2
+          class="titreProjet"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+          Mes Projets
+        </h2>
+        <div class="cerv">
+          <img
+            src="image/cerveau.png"
+            alt="cerveau"
+            data-aos="zoom-in"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine" />
+        </div>
+
+        <a
+          href="projet/Georgia/index.html"
+          id="modalProjet"
+          class="projet1"
+          data-aos="zoom-in"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"></a>
+
+        <div id="modal-container">
+          <div id="modal-content">
+            <button id="close-modal">X</button>
+            <iframe id="modal-iframe"></iframe>
+          </div>
+          <div id="modal-overlay"></div>
+        </div>
+
+        <a
+          href="projet/Kyoto/index.html"
+          id="modalProjet"
+          class="projet2"
+          data-aos="zoom-in"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"></a>
+        <a
+          href="projet/Landing Nature/Index.html"
+          id="modalProjet"
+          class="projet3"
+          data-aos="zoom-in"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"></a>
+        <a
+          href="projet/Site-boot/Index.html"
+          id="modalProjet"
+          class="projet4"
+          data-aos="zoom-in"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"></a>
+
+        <h3
+          class="titretechno"
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine">
+          Les languages et technologies utilisé
+        </h3>
+        <div class="icones">
+          <img
+            src="image/icone/trans-html5.svg"
+            alt="html5"
+            data-aos="flip-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine" />
+          <img
+            src="image/icone/trans-css3-alt.svg"
+            alt="css3"
+            data-aos="flip-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine" />
+          <img
+            src="image/icone/trans-js.svg"
+            alt="js"
+            data-aos="flip-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine" />
+          <img
+            src="image/icone/trans-node-js.svg"
+            alt="node-js"
+            data-aos="flip-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine" />
+          <img
+            src="image/icone/trans-bootstrap.svg"
+            alt="bootstrap"
+            data-aos="flip-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine" />
+          <img
+            src="image/icone/trans-sass.svg"
+            alt="sass"
+            data-aos="flip-up"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine" />
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------------------Contact---------------------------------------------------------->
+
+    <section>
+      <div class="footcontact" id="contact">
+        <ul class="contactlist">
+          <li>
+            <img
+              class="imglist"
+              src="image/white-phone.svg"
+              alt="icone Téléphone" />
+            Téléphone
+            <span>- 06 XX XX XX XX</span>
+          </li>
+          <li>
+            <img
+              class="imglist"
+              src="image/white-envelope.svg"
+              alt="icone enveloppe" />
+            Email
+            <span>- email@exemple.fr</span>
+          </li>
+          <li>
+            <img
+              class="imglist"
+              src="image/white-location-dot.svg"
+              alt="icone localisation" />
+            Zone géographique
+            <span>- Rhône, Lyon</span>
+          </li>
+          <li class="reseau">
+            <a href="https://github.com/SChrisJp" target="_blank"
+              ><img
+                class="reseauIcones"
+                src="image/icone/trans-github.svg"
+                alt="github"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/christopher-jean-pierre-b89818271/"
+              target="_blank"
+              ><img
+                class="reseauIcones"
+                src="image/icone/trans-linkedin.svg"
+                alt="linkedin"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-------------------------------------------Footer---------------------------------------------------------->
+
+    <section>
+      <div class="footer">
+        <p>
+          SCJP © - Créé et développé par <span>JEAN-PIERRE Christopher</span>
+        </p>
+      </div>
+    </section>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

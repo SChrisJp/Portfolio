@@ -1,0 +1,25 @@
+*, ::before,::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* .content{
+    overflow: hidden;
+} */
+
+.parallax{
+    background: url(./parallax.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.area{
+    resize: none;
+}
+
+/* .overlay{
+    height: 98.9%;
+    width: 98.5%;
+} */

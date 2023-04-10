@@ -1,0 +1,505 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merienda One', cursive;
+
+}
+
+
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+.nav{
+    height: 60px;
+    width: 100%;
+    background: #525252;
+    position: fixed;
+    z-index: 10;
+}
+.nav ul{
+    height: 100%;
+    width: 100%;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+    gap: 50px;
+}
+.backg{
+    height: 100vh;
+    min-width: 100%;
+    background: url(./accueil-pic-lum-down.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    /* position: fixed; */
+}
+.Titre{
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-shadow: 0 0 10px black;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.Titre img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.Titre h1{
+    font-size: 6rem;
+}
+.Titre p{
+    font-size: 1.5rem;
+}
+.Titre button{
+    height: 60px;
+    width: 180px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: #DC143C;
+}
+.main{
+    height: 220vh;
+}
+.main .qfak{
+    /* position: relative; */
+    height: 100%;
+    width: 320px;
+    border: 1px solid black;
+    border-bottom: none;
+    border-top: none;
+    margin: 0 auto;
+}
+.card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    /* justify-content: space-around; */
+}
+.main h2{
+    text-align: center;
+    padding: 20px;
+}
+.card1,.card2,.card3 {
+    /* position: relative; */
+    color: white;
+    width: 320px;
+    height: 465px;
+    background:#333333;
+}
+.main h3,p{
+    padding: 20px 10px;
+}
+.main p{
+    line-height: 30px;
+        font-size: 0.6rem;
+
+}
+.card1 p,.card3 p{
+    text-align: left;
+    padding-right: 160px;
+}
+.card1,.card3{
+    margin-left: -50%;
+}
+.card1 img, .card3 img{
+    /* position: absolute; */
+    height: 90%;
+    width: 90%;
+    margin-top: -105%;
+    margin-left: 51%;
+}
+.card2 img{
+    height: 90%;
+    width: 90%;
+    margin-top: -105%;
+    margin-left: -42%;
+}
+.card2{
+   margin-left: 50%;
+}
+.card2 p,.card2 h3{
+   text-align: left;
+    padding-left: 160px;
+}
+.card button{
+    height: 50px;
+    width: 120px;
+    border-radius: 50px;
+    color: white;
+    background: #DC143C;
+    border: 1px solid black;
+}
+.card1 button,.card3 button{
+    margin: 0 22px;
+    /* margin-top: 20px; */
+}
+.card2 button {
+    margin-left: 175px;
+}
+.paralax{
+    height: 300px;
+    width: 100%;
+    background: url(./parallax-large-flou.jpg);
+    background-size:130% ;
+    background-position:center ;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Paratitre h2{
+    font-size: 4rem;
+    font-weight:400;
+}
+.Paratitre p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.lvg{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-decoration: underline; */
+}
+.lvg h2{
+    font-size: 2.5rem;
+    font-weight: lighter;
+
+    }
+.line{
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    margin: 20px auto;
+}
+.pricing{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-bottom-style :dashed;
+}
+.pricecard{
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.38);
+}
+
+.pricecard:hover{
+    transform: translateY(-20px);
+    /* transition-duration: 1s; */
+    transition: 0.3s ease-out;
+    
+
+}
+.cardtitle{
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20px;
+    position: relative;
+   
+}
+.cardtitle h3{
+    height: 80px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+    font-size: 1.7rem;
+    text-align: center;
+    padding-top: 15px;
+
+}
+.cardtitle h4{
+    text-align: center;
+    font-size: 1.2rem;
+    height: 60px;
+    width: 300px;
+
+}    
+
+.h3color1{
+    background: pink;
+}
+.h3color2{
+    background: #FF5073;
+}
+.h3color3{
+    background: #FF0033;
+}
+.cardcontent{
+    height: 300px;
+    width: 300px;
+}
+.cardcontent ul{
+    font-size: 0.9rem;
+    list-style: none;
+   
+}
+.cardlist1, .cardlist3, .cardlist5{
+    background:#F2F2F2;
+    height: 50px;
+    width: 300px;
+    border-top: 1px solid rgba(0, 0, 0, 0.283);
+    padding-left: 10px;
+}
+.cardlist2, .cardlist4, .cardlist6{
+    height: 50px;
+    width: 300px;
+    border-top: 1px solid rgba(0, 0, 0, 0.283);
+    padding-left: 10px;
+
+}
+
+.cardbutton{
+    height: 80px;
+    width: 300px;
+    border-top: 1px solid rgba(0, 0, 0, 0.283);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cardbutton button{
+    height: 40px;
+    width: 170px;
+    border-radius: 50px;
+    border-color: rgba(0, 0, 0, 0.472);
+    background: white;
+}
+.cardbutton button:hover{
+    background:#F2F2F2;
+    cursor: pointer;
+
+}
+.rec{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rec h2{
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+.rec span{
+    font-weight: bold;
+}
+.form{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.form input,label, textarea, button{
+    width: 70%;
+    margin: 0 auto;
+}
+.form input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.form label{
+    color: rgba(0, 0, 0, 0.306);
+}
+.form textarea{
+    background: #F1F1F1;
+    resize: none;
+}
+.form button{
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    background: white;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    margin: 0 250px ;
+    border-color: rgba(0, 0, 0, 0.424);
+    cursor: pointer;
+}
+
+
+.footer{
+    height: 10px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+.nav ul {
+gap: 20px;
+font-size: 0.8rem;
+}
+
+.Titre h1 {
+font-size: 4rem;
+}
+
+.Titre p {
+font-size: 1rem;
+}
+
+.Titre button {
+height: 50px;
+width: 160px;
+font-size: 1rem;
+}
+
+.main {
+height: 250vh;
+}
+
+.main .qfak {
+width: 100%;
+}
+
+.card {
+gap: 100px;
+}
+
+.main h3,
+.main p {
+font-size: 0.8rem;
+}
+
+.card1 p,
+.card3 p {
+padding-right: 120px;
+}
+
+.card button {
+height: 40px;
+width: 100px;
+font-size: 0.8rem;
+}
+
+.Paratitre h2 {
+font-size: 3rem;
+}
+
+.Paratitre p {
+font-size: 1rem;
+}
+
+.lvg h2 {
+font-size: 2rem;
+}
+
+.line {
+width: 150px;
+margin: 10px auto;
+}
+
+.pricing {
+flex-direction: column;
+height: auto;
+}
+
+.pricecard {
+width: 90%;
+margin: 20px auto;
+}
+}
+
+@media only screen and (max-width: 480px) {
+.nav ul {
+gap: 10px;
+font-size: 0.7rem;
+}
+
+.Titre h1 {
+font-size: 3rem;
+}
+
+.Titre p {
+font-size: 0.8rem;
+}
+
+.Titre button {
+height: 40px;
+width: 130px;
+font-size: 0.7rem;
+}
+
+.main {
+height: 300vh;
+}
+
+.card {
+gap: 50px;
+}
+
+.main h3,
+.main p {
+font-size: 0.6rem;
+}
+
+.card1 p,
+.card3 p {
+padding-right: 100px;
+}
+
+.card button {
+height: 30px;
+width: 80px;
+font-size: 0.7rem;
+}
+
+.Paratitre h2 {
+font-size: 2rem;
+}
+
+.Paratitre p {
+font-size: 0.8rem;
+}
+
+.lvg h2 {
+font-size: 1.5rem;
+}
+
+.line {
+width: 100px;
+margin: 10px auto;
+}
+
+.pricing {
+gap: 20px;
+}
+
+.pricecard {
+height: auto;
+}
+}

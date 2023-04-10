@@ -1,0 +1,312 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: silver;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.nav .navlist {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.nav .navlink:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.27);
+}
+.nav .imgMenu {
+  height: 30px;
+  visibility: hidden;
+}
+.nav .menuH {
+  visibility: hidden;
+  position: absolute;
+  transform: translatey(-60px);
+}
+
+.bghead {
+  height: 100%;
+  background: url(./home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.bghead .bgtxt {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.bghead .bgtxt h1 {
+  font-size: 4.2rem;
+}
+.bghead .bgtxt p {
+  font-size: 1.2rem;
+}
+
+.d1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.d2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-bottom: dashed rgb(219, 244, 244);
+  padding: 50px;
+}
+.d2 img {
+  height: 650px;
+  width: auto;
+}
+.d2 .card {
+  background: rgb(219, 244, 244);
+  height: 650px;
+  width: 433px;
+}
+.d2 .card h3 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 2rem;
+}
+.d2 .card .Subtitle {
+  text-align: center;
+  padding: 30px;
+  font-size: 1rem;
+}
+.d2 .card .p1 {
+  padding: 0 15px;
+  font-size: 1.1rem;
+}
+.d2 .card .p1::first-letter {
+  font-weight: bold;
+}
+.d2 .card .line {
+  height: 0;
+  width: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.27);
+  margin: 30px auto;
+}
+.d2 .card .p2 {
+  padding: 0 15px;
+  font-size: 1.1rem;
+}
+.d2 .card .p2::first-letter {
+  font-weight: bold;
+}
+
+.d3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.line2 {
+  height: 0;
+  width: 50%;
+  max-width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.27);
+  margin: -10px auto;
+}
+
+.galerie {
+  width: 50%;
+  max-width: 655px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px auto 100px;
+  gap: 20px;
+}
+.galerie .photo {
+  height: 250px;
+  width: 205px;
+}
+.galerie .photo img {
+  height: 100%;
+  width: 100%;
+}
+.galerie .photo:hover {
+  transform: scale(200%);
+  transition: 0.5s ease-in-out;
+}
+
+.paralax {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./para.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.paralax h3 {
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 600;
+}
+
+.form {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form h4 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.form label {
+  width: 60%;
+  text-align: left;
+}
+.form input {
+  width: 60%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.form textarea {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: none;
+}
+.form button {
+  width: 20%;
+  padding: 5px;
+  margin-bottom: 50px;
+}
+
+.footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  border-top: dashed rgba(0, 0, 0, 0.27);
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    display: flex;
+    justify-content: end;
+  }
+  .nav .navlist {
+    height: 500%;
+    width: 100%;
+    background-color: rgba(192, 192, 192, 0.358);
+    transform: translateY(-60%);
+    display: grid;
+    position: absolute;
+  }
+  .nav .imgMenu {
+    height: 30px;
+    margin-right: 20px;
+    visibility: visible;
+  }
+  .nav .nav .menuH:checked ~ .nav .navlist {
+    transform: translateY(160%);
+  }
+  .bghead .bgtxt h1 {
+    font-size: 3rem;
+  }
+  .bghead .bgtxt p {
+    font-size: 1rem;
+  }
+  .d1 {
+    font-size: 1.2rem;
+  }
+  .d2 img {
+    height: 450px;
+    width: auto;
+  }
+  .d2 .card {
+    background: rgb(219, 244, 244);
+    height: 450px;
+    width: 300px;
+  }
+  .d2 .card h3 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.2rem;
+  }
+  .d2 .card .Subtitle {
+    padding: 20px;
+    font-size: 0.8rem;
+  }
+  .d2 .card .p1 {
+    font-size: 0.65rem;
+  }
+  .d2 .card .line {
+    margin: 20px auto;
+  }
+  .d2 .card .p2 {
+    font-size: 0.65rem;
+  }
+  .d3 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .bghead .bgtxt h1 {
+    font-size: 2rem;
+  }
+  .bghead .bgtxt p {
+    font-size: 0.8rem;
+  }
+  .d1 {
+    font-size: 0.9rem;
+  }
+  .card .p1 {
+    font-size: 0.6rem;
+  }
+  .card .line {
+    margin: 20px auto;
+  }
+  .card .p2 {
+    font-size: 0.6rem;
+  }
+}/*# sourceMappingURL=Style.css.map */
